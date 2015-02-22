@@ -33,7 +33,7 @@ function TabManager(){
 			}
 			
 			var addwindow;
-			var deletetabs;
+			//var deletetabs;
 			var pintabs;
 			var search;
 			var layout;
@@ -41,14 +41,14 @@ function TabManager(){
 				Div("window",
 					search = Txt(),
 					layout = Div("icon windowaction "+This.Layout),
-					deletetabs = Div("icon windowaction trash"),
+					//deletetabs = Div("icon windowaction trash"),
 					pintabs = Div("icon windowaction pin"),
 					addwindow = Div("icon windowaction new")					
 				)
 			);
 
 			addwindow.setAttribute('title', 'Add Window');
-			deletetabs.setAttribute('title', 'Delete Tabs');
+			//deletetabs.setAttribute('title', 'Delete Tabs');
 			pintabs.setAttribute('title', 'Pin Tabs');
 			layout.setAttribute('title', 'Toggle Layout');
             
@@ -56,7 +56,7 @@ function TabManager(){
 			search.focus();
 			search.select();
 			
-			deletetabs.on("click",function(){
+			/*deletetabs.on("click",function(){
 				var tabs = This.getElementsByClassName("tab selected");
 				if(tabs.length){
 					var t = [];
@@ -82,7 +82,7 @@ function TabManager(){
 						});
 					});
 				}
-			});
+			});*/
 			function addWindow(){
 				var tabs = This.getElementsByClassName("tab selected");
 				var t = [];
