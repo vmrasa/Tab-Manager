@@ -108,6 +108,12 @@ body{
 .pin{
 	background-image:url(pin.png);
 }
+.alpha{
+       background-image:url(a.png);
+}
+.default{
+        background-image:url(d.png);
+}
 .tab.left > .limiter, .tab.right > .limiter{
 	width:2px;
 	height:20px;
